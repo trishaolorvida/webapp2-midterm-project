@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f7ccdf;
+    color: #d50060;
+    font-family: 'Montserrat';
+    font-size: 0.8rem;
+}
+
+* {
+    text-decoration: none;
+}
+
+.navbar {
+    background: #d50060;
+    font-family: 'Montserrat';
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+li a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+li a:hover {
+    background-color: #e666a0;
+}
+
+.Item {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+    list-style: none;
+    border-radius: 10px;
+    height: 240px;
+    background-color: white;
+    width: 100%;
+}
+
+.itemImageDiv { 
+    border: 2px solid white;
+    border-radius: 10px;;
+    height: 180px;
+    margin: 5px;
+}
+
+.itemImage {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.itemTitleDiv {
+    color: black;
+    font-family: 'Montserrat'
+}
+
+
+.itemTitleContent {
+    text-align: center;
+}
+
+
+.Previews {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#ulGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 45vw);
+    grid-template-rows: auto;
+    gap: 5vw;
+    margin-top: 3vh;
+}
+
+.Header {
+    background-color: rgb(2, 33, 33);
+    padding-bottom: 10px;   
+    border-radius: 0px 0px 15px 15px;
+    position: fixed;
+}
+
+
+@media (min-width: 425px) {
+    #ulGrid {
+        grid-template-columns: repeat(2, 45vw);
+        justify-content: space-between;
+    }
+    .itemTitleContent{
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 550px) {
+    #ulGrid {
+        grid-template-columns: repeat(3, 28vw);
+    }
+    .itemImageDiv{
+        height: 150px;
+    }
+    .Item{
+        height: 210px;
+    }   
+}
+
+@media (min-width: 700px) {
+    #ulGrid {
+        grid-template-columns: repeat(4, 20vw);
+        gap: 3vw;
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 1100px) {
+    #ulGrid {
+        grid-template-columns: repeat(5, 16vw);
+    }
+}
+
+
+.AppendLI {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+
+    width: 60vh;
+    height: 40vh;
+}
+
+.AppendClass {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+.wholeFloatingContainer {
+    height: 100vh;
+    width: 100vw;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.floatingContainerFlex {
+    display: flex;
+    align-self: center;
+    background: #f7ccdf;
+    border-radius: 5px;
+}
+
+.floatingContentGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 10px;
+    grid-template-rows: 80px 240px 50px; 
+}
+
+.floatingImageContainer {
+    grid-column: 1/2;
+    grid-row: 1/3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#floatingImage {
+    height: 300px;
+    width: 280px;
+
+    object-fit: cover;
+    border: 4px solid white;
+    border-radius: 5px;
+}
+
+.floatingTitleContainer {
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+    padding-bottom: 10px;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+.floatingContentContainer {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 2/3;
+
+    padding-top: 50px;
+    font-family: 'Montserrat';
+    font-weight: 200;
+}
+
+.floatingContent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.closeButtonDiv {
+    grid-column: 1/3;
+    grid-row: 3/4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.buttonDesign {
+    background: #d50060;
+    padding: 8px 15px;
+    border-radius: 3px;
+
+    font-family: 'Montserrat';
+    font-size: 0.9rem;
+
+    color: #f7ccdf;
+}
+
+.buttonDesign:hover {
+    cursor: pointer;
+}
+
+.noScroll {
+    overflow: hidden;
+}
