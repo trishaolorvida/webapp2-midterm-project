@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <nav>
+        <div class="navbar">
+            <div class="navdiv">
+                <div class="logo"><a href="#">AAAAA</a> </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index2.html">Photos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="Previews">
+        <div class="wholeFloatingContainer" id="popupContainer">
+
+            <div class="floatingContainerFlex">
+    
+                <div class="floatingContentGrid">
+    
+                    <div class="floatingImageContainer">
+                        <img alt="Image" id="floatingImage" class="floatingImage">
+                    </div>
+        
+                    <div class="floatingTitleContainer">
+                        <h3 id="floatingTitle"></h3>
+                    </div>
+        
+                    <div class="floatingContentContainer" >
+                        <p class="floatingContent AlbumID" id="SpanAlbumID"></p>
+                        <p class="floatingContent PhotoID" id="SpanPhotoID"></p>
+                        <p class="floatingContent fullTitle" id="SpanTitle"></p>
+                        <p class="floatingContent url" id="SpanURL"></p>
+                    </div>
+        
+                    <div class="closeButtonDiv"> 
+                        <buttion id="closeFloater" class="buttonDesign">Close</button>
+                    </div>
+        
+                </div>
+    
+            </div>
+            
+        </div>
+        <ul id="ulGrid">
+        </ul>
+    </section>
+    <script src="script2.js"></script>
+
+</body>
+</html>
